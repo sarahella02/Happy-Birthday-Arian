@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Arian</title>
+  <style>
+    body {
+      background-color: #ffe5b4;
+      background-image: url('confetti.png');
+      background-repeat: repeat;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff4d4d;
+      animation: moveText 3s ease-in-out infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes moveText {
+      0%   { transform: translateX(-10px); }
+      50%  { transform: translateX(10px); }
+      100% { transform: translateX(-10px); }
+    }
+
+    .message {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin-top: 10px;
+      color: #333;
+      line-height: 1.6;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Happy Birthday Arian 🎉</h1>
+
+  <div class="message">
+    You’re honestly one of the best people I’ve ever known.<br>
+    Your kindness, humor, and heart are unmatched.<br>
+    Today is your day to shine brighter than ever.<br>
+    I hope your birthday is as amazing as you are.<br>
+    I love you! 💖
+
+  </div><!-- Background Music: Happy Birthday Song -->
+<audio autoplay loop>
+  <source src="HappyBdaySong.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>
